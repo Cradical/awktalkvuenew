@@ -1,4 +1,7 @@
 <template>
+  <div>
+      <TopNavBar />
+      <BottomMenu />
     <v-flex xs12 sm6 offset-sm3>
           <v-layout row wrap>
             <v-flex
@@ -26,14 +29,21 @@
             </v-flex>
           </v-layout>
     </v-flex>
+  </div>
 </template>
 <script>
+import TopNavBar from '../components/TopNavBar.vue';
+import BottomMenu from '../components/BottomMenu.vue';
 export default {
     name: 'EventSelection',
+    components: {
+      TopNavBar,
+      BottomMenu
+    },
     data: () => ({
       cards: [
-        { title: 'Networking', src: 'https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341_1280.jpg', flex: 6 },
-        { title: 'Party', src: 'https://cdn.pixabay.com/photo/2015/09/02/13/26/glasses-919071_1280.jpg', flex: 6 },
+        { title: 'Networking', src: 'party.jpg', flex: 6 },
+        { title: 'Party', src: 'networking.jpg', flex: 6 },
       ]
     })
 }

@@ -5,6 +5,7 @@ import Test from './views/Test'
 import Cards from './views/Cards'
 import Home from './views/Home'
 import TopNavBar from './components/TopNavBar'
+import Signin from './views/Signin'
 
 Vue.use(Router)
 
@@ -12,8 +13,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'test',
-      component: Test
+      name: 'signin',
+      component: Signin
     },
     {
       path: '/event',
