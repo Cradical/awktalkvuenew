@@ -42,8 +42,8 @@ export default {
     },
     data: () => ({
       cards: [
-        { title: 'Networking', src: 'party.jpg', flex: 6 },
-        { title: 'Party', src: 'networking.jpg', flex: 6 },
+        {title: 'Networking', src: 'https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341_1280.jpg', flex: 6 },
+        {title: 'Party', src: 'https://cdn.pixabay.com/photo/2015/09/02/13/26/glasses-919071_1280.jpg', flex: 6 }
       ]
     })
 }
