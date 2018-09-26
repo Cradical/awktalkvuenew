@@ -1,12 +1,19 @@
 <template>
-<div>
+  <div>
+    <TopNavBar />
     <h1>I'm Test.vue asdfadfasfdlasdfkjals;dfkjaldfskjalfjas</h1>
-    </div>
+    <BottomMenu />
+  </div>
 </template>
 <script>
+import BottomMenu from '../components/BottomMenu';
+import TopNavBar from '../components/TopNavBar';
 export default {
   name: 'Test',
-  components: {}
+  components: {
+    BottomMenu,
+    TopNavBar
+  }
 };
 </script>
 <style>

@@ -3,13 +3,15 @@ import Router from 'vue-router'
 import EventSelection from './views/EventSelection'
 import Test from './views/Test'
 import Cards from './views/Cards'
+import Home from './views/Home'
+import TopNavBar from './components/TopNavBar'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/test',
+      path: '/',
       name: 'test',
       component: Test
     },
@@ -22,6 +24,11 @@ export default new Router({
       path: '/cards',
       name: 'cards',
       component: Cards
+    },
+    {
+      path: '/home',
+      name: 'home',
+      component: Home
     },
   ]
 })
